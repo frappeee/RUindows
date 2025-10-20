@@ -1,0 +1,172 @@
+/* Base Styles */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Welcome Label */
+.welcome-label {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: normal;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 1);
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-background-radius: 25px;
+    -fx-border-color: rgba(255, 255, 255, 0.9);
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.text-field:focused {
+    -fx-border-color: white;
+    -fx-border-width: 2.5px;
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+/* Login Button */
+.login-button {
+    -fx-background-color: rgba(240, 173, 78, 0.9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 25px;
+    -fx-border-color: rgba(240, 173, 78, 0.7);
+    -fx-border-width: 1px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-padding: 10px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.login-button:hover {
+    -fx-background-color: rgba(240, 173, 78, 1.0);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.login-button:pressed {
+    -fx-background-color: rgba(220, 153, 58, 0.9);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Error Label */
+.error-label {
+    -fx-text-fill: #ff3333;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 1, 0, 0, 1);
+}
+
+/* Success Labels */
+.success-label {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 1);
+}
+
+.welcome-back-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 1, 0, 0, 1);
+}
+
+.loading-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 1, 0, 0, 1);
+}
+
+/* Remember Me Checkbox */
+.remember-checkbox {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 1, 0, 0, 1);
+}
+
+.remember-checkbox .box {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: white;
+    -fx-border-radius: 3px;
+}
+
+.remember-checkbox:selected .mark {
+    -fx-background-color: #f0ad4e;
+}
+
+/* Hyperlinks */
+.forgot-password-link, .create-account-link {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-border-color: transparent;
+    -fx-underline: true;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 1, 0, 0, 1);
+}
+
+.forgot-password-link:hover, .create-account-link:hover {
+    -fx-text-fill: #f0ad4e;
+}
+
+/* Continue Button */
+.continue-button {
+    -fx-background-color: rgba(92, 184, 92, 0.9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 25px;
+    -fx-border-color: rgba(92, 184, 92, 0.7);
+    -fx-border-width: 1px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.continue-button:hover {
+    -fx-background-color: rgba(92, 184, 92, 1.0);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.continue-button:pressed {
+    -fx-background-color: rgba(72, 164, 72, 0.9);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Dialog styling */
+.dialog-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #f0ad4e;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #f0ad4e;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #ec971f;
+}
